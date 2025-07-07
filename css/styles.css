@@ -1,15 +1,11 @@
-/* ======================= */
-/* Tipografía base y cuerpo */
-/* ======================= */
+/* Tipografía base */
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
   background-color: #fff;
 }
 
-/* ====== */
-/* Navbar */
-/* ====== */
+/* Marca y enlaces activos */
 .navbar-brand {
   font-weight: bold;
   color: #009688 !important;
@@ -20,26 +16,22 @@ body {
   font-weight: bold;
 }
 
-/* ======== */
+/* Colores reutilizables */
+.text-teal {
+  color: #009688;
+}
+
 /* Carrusel */
-/* ======== */
 .carousel img {
   object-fit: cover;
   height: 400px;
 }
 
-/* ====== */
-/* Texto */
-/* ====== */
-.text-teal {
-  color: #009688;
-}
-
-/* ====== */
 /* Cards */
-/* ====== */
 .card-title {
   color: #009688;
+  font-size: 1.25rem; /* como antes estaba en <h5>, le damos tamaño similar */
+  font-weight: 600;
 }
 
 .card-img-top {
@@ -48,9 +40,7 @@ body {
   object-position: center;
 }
 
-/* ================= */
-/* Accordion / FAQ */
-/* ================= */
+/* Accordion (FAQ) */
 .accordion-button {
   background-color: #f1f1f1;
   color: #333;
@@ -78,9 +68,7 @@ body {
   line-height: 1.6;
 }
 
-/* =================== */
-/* Galería de imágenes */
-/* =================== */
+/* Galería */
 .gallery-img-wrapper {
   overflow: hidden;
   border-radius: 8px;
@@ -101,9 +89,37 @@ body {
   cursor: pointer;
 }
 
-/* ====== */
 /* Footer */
-/* ====== */
 footer {
   border-top: 1px solid #eee;
+}
+
+footer h3 {
+  font-size: 1.1rem;
+  color: #17a2b8; /* text-info */
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer a,
+footer li {
+  font-size: 0.9rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #f8f9fa; /* texto claro */
+}
+
+.footer-link:hover {
+   color: #0dcaf0;
+}
+
+.social-icon {
+  color: #f8f9fa;
+  transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #0dcaf0; /* hover más claro */
 }
